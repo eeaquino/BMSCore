@@ -3,9 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GL", "GL\GL.csproj", "{8B1E0835-46A1-4BA3-9747-3433BD55BB15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GL", "GL\GL.csproj", "{8B1E0835-46A1-4BA3-9747-3433BD55BB15}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RabbitMQ", "RabbitMQ\RabbitMQ.shproj", "{C29333A1-C364-4F75-9A05-57E0E9EE6A0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conatiners", "Conatiners", "{AC6E7396-6000-4AA9-9A5B-8375B881E016}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Postgres", "Postgres\Postgres.shproj", "{69ED9D93-9237-4A78-A400-6ADD87D75BDB}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MongoDB", "MongoDB\MongoDB.shproj", "{6290FD12-81AC-40E5-BC3E-D17D8EE8B345}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MongoDB\MongoDB.projitems*{6290fd12-81ac-40e5-bc3e-d17d8ee8b345}*SharedItemsImports = 13
+		Postgres\Postgres.projitems*{69ed9d93-9237-4a78-a400-6add87d75bdb}*SharedItemsImports = 13
+		RabbitMQ\RabbitMQ.projitems*{c29333a1-c364-4f75-9a05-57e0e9ee6a0f}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -18,6 +31,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C29333A1-C364-4F75-9A05-57E0E9EE6A0F} = {AC6E7396-6000-4AA9-9A5B-8375B881E016}
+		{69ED9D93-9237-4A78-A400-6ADD87D75BDB} = {AC6E7396-6000-4AA9-9A5B-8375B881E016}
+		{6290FD12-81AC-40E5-BC3E-D17D8EE8B345} = {AC6E7396-6000-4AA9-9A5B-8375B881E016}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78CA9AC4-A874-4B1F-AB69-94AAABF6B8F1}
